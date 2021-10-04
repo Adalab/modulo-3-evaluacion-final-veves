@@ -1,0 +1,38 @@
+body{
+  background-color: black;
+}
+header{
+  margin: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+img{
+color: white;
+}
+.filter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.search{
+  border: solid #4cb5c3;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+}
+.cards{
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+}
+.card{
+  grid-column: span 1;
+  height: 290px;
+  width: 220px;
+  background-color: #4cb5c3;
+  margin: 20px;
+  justify-self: center;
+}
