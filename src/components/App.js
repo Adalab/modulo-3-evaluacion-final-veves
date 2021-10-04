@@ -1,41 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from 'react';
+import '../styles/App.css';
+import api from '../services/fech'
+import CharacterList from './characterList';
+
+
 
 function App() {
+
+
+
+  const [data, setData] = useState([]);
+  const [searchName, setSearchName] = useState('');
+
+  useEffect(() => {
+    api.getCharacter().then((initialData) => {
+      setData(initialData);
+    });
+
+  }, [])
   return (
-    <div className="App">
-          <header>
-        <img alt="logo de Rick y Morty" src="./logo.jpg"/>
-    </header>
-    <main>
-        <form class="filter">
-            <input type="text" class="search"/>
+    <div classNameName="App">
+      <header>
+        <img alt="logo de Rick y Morty" src="./logo.jpg" />
+      </header>
+      <main>
+        <form className="filter">
+          <input type="text" className="search" />
         </form>
-        <section class="cards">
-            <div class="card">
+        <CharacterList data={data} />
+      </main>
 
-            </div>
-            <div class="card">
-
-            </div>
-            <div class="card">
-
-            </div>
-            <div class="card">
-
-            </div>
-            <div class="card">
-
-            </div>
-            <div class="card">
-
-            </div>
-            <div class="card">
-
-            </div>
-        </section>
-    </main>
-    
     </div>
   );
 }

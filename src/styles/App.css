@@ -17,10 +17,9 @@ color: white;
   margin-top: 20px;
 }
 .search{
-  border: solid #4cb5c3;
+  border:0.5px solid #4cb5c3;
   color: white;
   background-color: black;
-  border-radius: 5px;
 }
 .cards{
   padding: 20px;
@@ -30,9 +29,17 @@ color: white;
 }
 .card{
   grid-column: span 1;
-  height: 290px;
+  height: 310px;
   width: 220px;
   background-color: #4cb5c3;
   margin: 20px;
   justify-self: center;
+  color: white;
+}
+.text{
+  margin-left: 10px;
+}
+.character-image{
+  height: 220px;
+  width: 220px;
 }
