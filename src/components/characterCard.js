@@ -1,8 +1,8 @@
 
 import '../styles/App.css';
+import'../styles/core/reset.css'
 
 function CharacterCard(props) {
-    console.log(props);  
         return(
             <>
             <img className="character-image" alt="imagen del personaje" src={props.characterData.image}></img>

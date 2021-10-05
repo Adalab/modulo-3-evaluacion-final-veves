@@ -1,0 +1,32 @@
+
+.new-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logoextra{
+    padding-top: 15px;
+    height: 150px;
+    width: 300px;
+}
+.complete{
+    height: 600px;
+    width: 800px;
+    background-color: #4cb5c3;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.info{
+    justify-content: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.img{
+    height: 300px;
+    width: 300px;
+}
