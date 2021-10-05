@@ -5,7 +5,7 @@ function getCharacter() {
         .then(json => {
             return json.results.map((character) => {
                 return {
-                    id: character.id.parseInt,
+                    id: parseInt(character.id),
                     name: character.name,
                     status: character.status,
                     species: character.species,
@@ -13,11 +13,12 @@ function getCharacter() {
                     origin: character.origin.name,
                     image: character.image
                 };
-
+                
             });
         })
     
 }
+
 
 
 const objectToExport = {
