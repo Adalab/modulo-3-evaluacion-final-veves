@@ -10,7 +10,6 @@ package-lock.json
 /coverage
 /src/tests
 # production
-/build
 
 # misc
 .DS_Store
